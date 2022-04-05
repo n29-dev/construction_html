@@ -42,7 +42,8 @@
     min-height: 600px;
   }
   .header-btn {
-    padding: 11px 28px;
+    padding: 10px 25px;
+    font-size: 12px;
   }
   .navbar-nav > .nav-item > .nav-link {
     margin-left: 15px;
@@ -109,7 +110,29 @@ p {
 .footer-widget.newsletter {
   margin-top: 25px;
 }
-
+.cc-order-4{
+  order: 4;
+}
+.topbar-right-icons ul li:hover form {
+  width: 100.5%;
+  height: 100%;
+  padding: 1px 0px;
+  top: 0px;
+  left: 10px;
+  right: 0px;
+  border: 1px solid #e7e7e7;
+  transform: translateX(-11px);
+  max-width: 100.5%;
+}
+.navigation-right ul li:hover .search-form-v3 {
+  position: relative;
+  width: 40vw;
+  padding-top: 0px;
+  border-radius: 16px;
+  background: #f7f7fd;
+  transform: translateX(0vw);
+  box-shadow: 0px 0px 5px 1px #0000002e;
+}
 }
 
 /* Extra small Device. */
@@ -133,20 +156,17 @@ p {
   .social-icons a {
     margin-left: 10px;
 }
-.topbar-right-icons ul li:hover form {
-  width: 100.5%;
-  height: 100%;
-  padding: 1px 0px;
-  top: 0px;
-  left: 10px;
-  right: 0px;
-  border: 1px solid #e7e7e7;
-  transform: translateX(-11px);
-  max-width: 100.5%;
-}
 .topbar-right-icons ul li:hover .transparent-form {
 	border: 0;
   box-shadow: 0px 2px 4px 1px #0000002e;
+}
+.navigation-right ul li:hover .search-form-v3 {
+  width: 40vw;
+  max-width: 40vw;
+  padding-top: 2px;
+  border-radius: 16px;
+  background: #f7f7fd;
+  box-shadow: 0px 0px 5px 1px #0000002e;
 }
 .topbar-right-icons ul li form input[type="text"] {
   width: 0px;
@@ -243,6 +263,15 @@ align-items: stretch;
 }
 .team-single{
   margin-bottom: 20px;
+}
+.social-icons-v3{
+  align-self: flex-end;
+} 
+.cc-order-1{
+  order: 1;
+}
+.cc-order-2{
+  order: 2;
 }
 }
 

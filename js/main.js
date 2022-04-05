@@ -23,14 +23,14 @@
 
     if(!open){
       $('.sidebar-wrapper').addClass('sidebar-open')
-      $('body').addClass('overflow-hidden')
+      $('body').addClass('y-hidden')
       open = true;
 
     }else{
 
       open = false;
       $('.sidebar-wrapper').removeClass('sidebar-open')
-      $('body').removeClass('overflow-hidden')
+      $('body').removeClass('y-hidden')
 
     }
   })
