@@ -673,7 +673,7 @@ ul > li > .submenu > li > .submenu > li:hover a {
   font-weight: 600;
   padding: 18px 45px;
 }
-.single-slide a.btn {
+  a.btn-v3 {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 25px;
