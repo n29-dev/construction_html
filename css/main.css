@@ -299,7 +299,9 @@ textarea {
   left: 0%;
   transform: translateY(-50%);
 }
-
+.social-icons a {
+	padding-left: 15px;
+}
 .social-icons a:hover {
   color: #fbba42;
 }
@@ -602,6 +604,9 @@ ul > li > .submenu > li > .submenu > li:hover a {
 	margin-left: 15px !important;
 	line-height: 48px;
 }
+.social-icons-v3 a:first-child {
+	padding-left: 0px;
+}
 .language-list > ul > .dropdown-v2 > .submenu {
   left: 4px;
   transform: translateY(22px);
@@ -803,6 +808,9 @@ ul > li > .submenu > li > .submenu > li:hover a {
 }
 .grid-item {
   margin-bottom: 30px;
+}
+.grid-item-v2 {
+	margin-bottom: 0;
 }
 .filter-button-group button {
   background-color: transparent;
@@ -1111,6 +1119,56 @@ Team
 }
 .slick-active.slick-center {
   transform: scale(1.2);
+}
+/* ==========================================================================
+Faq
+========================================================================== */
+.single-testimonial-v3 {
+	padding-top: 40px;
+}
+.testimonial-icon-v2 {
+	margin-bottom: 20px;
+}
+.testimonial-icon-v2 i {
+	color: #fbba42;
+	font-size: 36px;
+	line-height: 21px;
+}
+.accordion-button {
+	font-size: 18px;
+	line-height: 30px;
+	font-family: 'Poppins';
+  color: #333;
+}
+.accordion-button:not(.collapsed) {
+	color: #333;
+	background-color: #fff;
+  box-shadow: none;
+}
+.accordion-button::after {
+	width: auto;
+	height: auto;
+	margin-left: auto;
+	content: "-";
+	background-image: none;
+	background-repeat: no-repeat;
+	background-size: 1.25rem;
+	transition: transform .2s ease-in-out;
+	font-size: 14px;
+	border: 1px solid #282828;
+	padding: 14px 9.5px;
+	line-height: 0px;
+	color: #282828;
+	background-color: #fbba42;
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: none;
+	transform: rotate(180deg);
+	content: '+';
+}
+.accordion-item {
+	background-color: #fff;
+	border: 0;
 }
 /* ==========================================================================
 Footer
