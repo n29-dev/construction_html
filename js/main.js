@@ -261,22 +261,6 @@
         grid.isotope({ filter: filterValue });
       });
 
-  // button active
-
-      (function(){
-        const buttons = Array.from(document.getElementById('filter-buttons').children);
-        buttons.forEach(el => {
-          el.addEventListener('click', buttonHandler.bind(el))
-        })
-
-        function buttonHandler(){
-          buttons.forEach(ele => {
-            ele.classList.remove('active')
-          })
-          this.classList.add('active')
-        }
-      })()
-
   //magnificPopup
 
       $('.popup-link').magnificPopup({
@@ -305,6 +289,7 @@
     asNavFor: '.testimonial-nav',
  
   });
+
   $('.testimonial-nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -316,6 +301,33 @@
     prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-angle-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-angle-right"></i></button>'
   });
-     
+
+  //dropdown 
+  (function(){
+    let dropdownMenu = document.getElementById('dropdown-menu');
+    document.getElementById('dropdown-toggle').addEventListener('click', function(){
+      if(dropdownMenu.classList.contains('dropdown-active')){
+        dropdownMenu.classList.remove('dropdown-active')
+      }else{
+        dropdownMenu.classList.add('dropdown-active')
+      }
+    })
+  })()
+
+  // button active
+
+  (function(){
+      const buttons = Array.from(document.getElementById('filter-buttons').children);
+      buttons.forEach(el => {
+        el.addEventListener('click', buttonHandler.bind(el))
+      })
+
+      function buttonHandler(){
+        buttons.forEach(ele => {
+          ele.classList.remove('active')
+        })
+        this.classList.add('active')
+      }
+  })()
 
 }(jQuery))
