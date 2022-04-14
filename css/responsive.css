@@ -142,6 +142,24 @@
   .cc-md-order-2{
     order: 2;
   }
+  .page-content{
+    padding-right: 0px;
+  }
+  .page-sidebar{
+    padding-left: 0px;
+  }
+  .replied-comment{
+    padding-left: 60px;
+  }
+  .cart-product-name span {
+    transform: translateX(10%);
+}
+.cart-product-total .product-dlt {
+  transform: translateX(10px);
+}
+.cart-table-bottom > div {
+  flex-basis: auto;
+}
 }
 /* Extra small Device. */
 @media (max-width: 767px) {
@@ -317,6 +335,72 @@
   .single-product{
     text-align: center;
   }
+  .page-content{
+    padding-right: 0px;
+  }
+  .page-sidebar{
+    padding-left: 0px;
+  }
+  .replied-comment{
+    padding-left: 60px;
+  }
+  .cart-product-name img {
+    width: 25%;
+}
+.table tbody {
+  font-size: 14px;
+}
+.cart-product-name span {
+  transform: translateX(10px);
+}
+.table tbody tr:hover {
+  background: #f8f8f8;
+}
+.table tbody tr {
+  position: relative;
+}
+.cart-product-total .product-dlt {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 40px;
+  transform: translateY(-50%);
+  top: 50%;
+  height: 40px;
+  background: #fbba42e0;
+  border-radius: 50%;
+  right: -60px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease 0s;
+}
+.table tbody tr:hover .cart-product-total .product-dlt {
+  opacity: 1;
+  visibility: visible;
+}
+.cart-table-bottom {
+  margin-bottom: 40px;
+  flex-direction: column;
+}
+.coupon {
+  margin-bottom: 20px;
+}
+.cart-table-bottom button {
+  height: 40px;
+  font-size: 14px;
+}
+.coupon input {
+  height: 40px;
+  margin-right: 5px;
+}
+.update-cart button:first-child {
+  margin-right: 5px;
+}
+.table thead tr th {
+  font-size: 15px;
+}
+
 }
 
 /* SM Small Device :550px. */

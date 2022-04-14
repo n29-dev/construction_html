@@ -305,6 +305,7 @@
   //dropdown 
   (function(){
     let dropdownMenu = document.getElementById('dropdown-menu');
+    if(dropdownMenu !== null){
     document.getElementById('dropdown-toggle').addEventListener('click', function(){
       if(dropdownMenu.classList.contains('dropdown-active')){
         dropdownMenu.classList.remove('dropdown-active')
@@ -312,22 +313,26 @@
         dropdownMenu.classList.add('dropdown-active')
       }
     })
-  })()
+  }
+  })
+  ()
 
   // button active
 
-  (function(){
-      const buttons = Array.from(document.getElementById('filter-buttons').children);
-      buttons.forEach(el => {
-        el.addEventListener('click', buttonHandler.bind(el))
-      })
+  function active__Buttons(){
+      const buttons = Array.from(document.getElementById('filter-buttons')?.children ||[]);
+      if(buttons.length > 1){
+        buttons.forEach(el => {
+          el.addEventListener('click', buttonHandler.bind(el));
+        });
+        function buttonHandler(){
+          buttons.forEach(ele => {
+            ele.classList.remove('active');
+          })
+          this.classList.add('active');
+        };
+      };
+    }
+    active__Buttons('string');
 
-      function buttonHandler(){
-        buttons.forEach(ele => {
-          ele.classList.remove('active')
-        })
-        this.classList.add('active')
-      }
-  })()
-
-}(jQuery))
+})(jQuery);
